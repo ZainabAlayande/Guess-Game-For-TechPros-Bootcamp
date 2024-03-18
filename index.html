@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+
+    <style>
+        .container {
+           text-align: center;
+            border: 2px solid #111827;
+            border-radius: 10px;
+            width: 380px;
+            height: 380px;
+            justify-content: center; 
+            align-items: center;
+            margin: auto;
+            margin-top: 100px;
+            
+            /* #f0f0f0 */
+            background-color:  #111827;
+            padding: 20px;
+        }
+
+        .message {
+            color: yellow;
+        }
+        
+
+        .title-container {
+            padding: 10px;
+            margin-bottom: 20px;
+            display: inline-block; 
+        }
+
+
+        .game-box {
+            margin-top: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;  
+            background-color: white;          
+        }
+
+
+        .title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0; 
+        }
+
+        .heading {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .input {
+            margin-top: 5px;
+        }
+
+        .input input {
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 30px;
+            width: 200px;
+        }
+
+        .input button {
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 40px;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        .input button:hover {
+            background-color: darkred; 
+        }
+    </style>
+
+</head>
+<body class="body">
+
+    <div class="container">
+
+        <div class="title-container">
+            <h3 class="title">Number Guessing Game</h3>
+        </div>
+
+            <p class="message"></p>
+        
+
+
+    <div class="game-box">
+        <p class="heading">Guess a number between 1 - 100.</p>
+
+        <br />
+
+        <p class="heading">Enter a number below</p>
+
+        <br /><br />
+        
+        <div class="input">
+            <input type="text" id="input-field" name="input-field"/>
+            <button class="button">Enter</button>
+        </div>
+    </div>
+
+    </div> 
+
+    <script src="app.js"></script> 
+
+</body>
+</html>
+
